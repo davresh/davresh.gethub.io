@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.head{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+.booter{
+    max-width: 1200px;
+    background-color: white;
+
+}
+.web{
+    width: 100%;
+    height: 450px;
+    background: url("../img/simple-house-01.jpg") no-repeat fixed center 80%/cover;
+    padding-top: 330px;
+    position: relative;
+}
+.value{
+    position: absolute;
+    top: 10px;right: 10px;
+    z-index: 3;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.leftdiv{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.blok{
+    width: 100px;
+    height: 100px;
+    position: relative;
+   
+}
+.blok1{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    
+}
+.blok2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    position: absolute;
+    left:15px;
+    top:15px;
+    border-radius: 3px;
+    
+}
+.lefth1{
+    width: 80%;
+}
+.inh{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.rightdiv{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.taga{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+   
+}
+.topdiv{
+    margin:0  20px;
+    cursor:pointer;
+}
+.topdiv:hover{
+    padding-bottom: 10px;
+    border-bottom:1px solid white;
+}
+.decoration{
+    padding-bottom: 10px;
+    border-bottom:1px solid white;
+    
+}
+.text{
+   width: 100%;
+   padding: 50px 0;
+   display: flex;
+   justify-content: center;
+
+}
+.textindiv{
+    width: 60%;
+    text-align: center;
+}
+.texth1{
+    font-size: 35px;
+    padding: 20px 0;
+}
+.textp{
+    font-size: 20px;
+    color: gray;
+    line-height: 30px;
+}
+.listresturant{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.lista{
+    color: #2F956D;
+    text-decoration: none;
+    border: 1px solid #2F956D;
+    padding: 10px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.lista:hover{
+    color: white;
+    background-color:#2F956D;
+}
+.ahover{
+    color: white;
+    background-color:#2F956D;
+}
+.ingridient{
+    width: 100%;
+    display:flex;
+	flex-wrap:wrap ;
+    padding: 0 50px;
+}
+.eatHead{
+    width: 100%;
+    display:flex;
+	flex-wrap:wrap ;
+}
+.eat{
+    width: 21%;
+    margin:30px 2%;
+}
+.imgBlock{
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+.photo1{
+    width: 100%;
+    height: 100%;
+}
+.foodBlock{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    transition: .4s;
+    cursor: pointer;
+    display: none;
+}
+.buyFood{
+    border: none;
+    background-color: #2F956D;
+    color: azure;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.buyFood:hover{
+    background-color: rgb(82, 164, 38);
+}
+.imgBlock:hover .foodBlock{
+    display: flex;
+}
+.eath{
+    color: #1A6692;
+    margin: 10px 0;
+}
+.eatp{
+    color: gray;
+    line-height: 25px;
+
+}
+.eatvalue{
+    color: #2F956D;
+    margin-top: 30px;
+}
+
+.fruit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    padding: 0 2%;
+}
+.fruitimg{
+    width: 48%;
+    height: 35vh;
+    background-image: url("../img/img-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.fruittext{
+    width: 48%;
+}
+.fruitdiv{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 97px;
+}
+
+.fruita{
+    color: gray;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 10px 25px;
+    margin: 0 10px;
+}
+.fruita:hover{
+    background-color: gray;
+    color: white;
+}
+.end{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+@media screen and (max-width:993px) {
+    .eat{
+        width: 29%;
+    }
+}
+@media screen and (max-width:768px) {
+    .web{
+        background-position: center -19vh;
+        padding-top: 300px;
+    }
+    
+    .nav{
+        padding: 0 30px;
+        flex-direction: column;
+    }
+    .leftdiv{
+        width: 100%;
+    }
+    .rightdiv{
+        width: 100%;
+    }
+    .textindiv{
+        width: 90%;
+    }
+    .eat{
+        width: 46%;
+    }
+    .fruit{
+        flex-direction: column;
+    }
+    .fruitimg{
+        width: 100%;
+    }
+    .fruittext{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:570px) {
+    .web{
+        padding-top: 290px;
+    }
+    .inh, .inp{
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .eat{
+        width: 70%;
+        margin: 20px auto;
+    }
+   
+}
+@media screen and (max-width:419px) {
+    .web{
+        padding-top: 150px;
+        background-position: center -30vh;
+    }
+    .rightdiv{
+        margin-top: 10px;
+    }
+    .leftdiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightdiv{
+        justify-content: center;
+    }
+    .eat{
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px) {
+    
+    .listresturant{
+        padding: 0 10px;
+        justify-content: space-evenly;
+    }
+    .lista{
+        margin: 0;
+    }
+}

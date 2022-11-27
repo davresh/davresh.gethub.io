@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.head{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+.booter{
+    max-width: 1200px;
+    background-color: white;
+}
+.web{
+    width: 100%;
+    height: 450px;
+    background: url("../img/simple-house-01.jpg") no-repeat fixed center 80%/cover;
+    padding-top: 330px;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.leftdiv{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.blok{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.blok1{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+.blok2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    position: absolute;
+    left:15px;
+    top:15px;
+    border-radius: 3px;
+}
+.lefth1{
+    width: 80%;
+}
+.inh{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.rightdiv{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.taga{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+   
+}
+
+.topdiv{
+    margin:0  20px;
+    cursor:pointer;
+}
+.topdiv:hover{
+    padding-bottom: 10px;
+    border-bottom:1px solid white;
+}
+.decoration{
+    padding-bottom: 10px;
+    border-bottom:1px solid white;
+}
+.text{
+   width: 100%;
+   padding: 50px 0;
+   display: flex;
+   justify-content: center;
+
+}
+.textindiv{
+    width: 60%;
+    text-align: center;
+}
+.texth1{
+    font-size: 35px;
+    padding: 20px 0;
+}
+.textp{
+    font-size: 20px;
+    color: gray;
+    line-height: 30px;
+}
+
+.imgs{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+	flex-wrap:wrap ;
+    padding: 0 50px;
+   
+}
+.imgtext{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.img{
+    width: 30%;
+}
+.textabout{
+    width: 68%;
+}
+.texth{
+    color: #09C;
+    margin-bottom: 10px;
+}
+.texth5{
+    color: #C39;
+    margin-bottom: 20px;
+}
+.textptop{
+    font-size: 18px;
+    color: gray;
+    line-height: 25px;
+  
+}
+.iconka{
+    color: gray;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.iconka:hover{
+    color:white;
+    background-color: gray;
+}
+.end{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+.backgroundimg{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/about-05.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 30px 0;
+}
+.btntext{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btndiv{
+    width: 30%;
+    text-align: center;
+}
+.btni{
+    font-size: 70px;
+    
+}
+.btnp{
+    margin: 50px 0;
+    font-size: 18px;
+}
+.fruita{
+    color: white;
+    text-decoration: none;
+    background-color: #2D99CC;
+    padding: 10px 25px;
+   
+}
+
+.fruita:hover{
+    background-color: #1b6f96;
+}
+.btn2{
+    background-color: #319966;
+}
+.btn2:hover{
+    background-color: #1d6e46;
+
+}
+.btn3{
+    background-color: #993332;
+}
+.btn3:hover{
+   background-color: #752423;
+}
+.whomen{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+.whomenimg{
+    width: 48%;
+    height: 300px;
+    background-image: url("../img/about-06.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.whomentext{
+    width: 48%;
+}
+.whomenh{
+    color: gray;
+}
+.whomenp{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0;
+    color: gray;
+}
+@media screen and (max-width:993px) {
+    .imgs{
+        flex-direction: column;
+    }
+    .imgtext{
+        width: 100%;
+    }
+    .btntext{
+        flex-direction: column;
+    }
+    .btndiv{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .web{
+        background-position: center -19vh;
+        padding-top: 300px;
+    }
+    .nav{
+        padding: 0 30px;
+        flex-direction: column;
+    }
+    .leftdiv{
+        width: 100%;
+    }
+    .rightdiv{
+        width: 100%;
+    }
+    .textindiv{
+        width: 90%;
+    }
+    .whomen{
+        flex-direction: column;
+    }
+    .whomenimg{
+        width: 100%;
+    }
+    .whomentext{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:570px) {
+    .inh, .inp{
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .imgs{
+        padding: 0 15px;
+    }
+    
+    .nkarner{
+        width: 38%;
+    }
+    .textabout{
+        width: 60%;
+    }
+}
+@media screen and (max-width:419px) {
+    .web{
+        padding-top: 150px;
+        background-position: center -30vh;
+    }
+    .rightdiv{
+        margin-top: 10px;
+    }
+    .leftdiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightdiv{
+        justify-content: center;
+    }
+    .imgtext{
+        flex-direction: column;
+        
+    }
+    .nkarner{
+        margin: 0 auto;
+    }
+    .textabout{
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px) {
+
+    .nkarner{
+        width: 60%;
+    }
+    .imgtext{
+        padding: 0 10px;
+    }
+}
